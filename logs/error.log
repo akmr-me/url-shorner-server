@@ -1,0 +1,2749 @@
+[31m{[39m
+[31m  message: {[39m
+[31m    email: ValidatorError: Please Enter Email[39m
+[31m        at validate (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\schematype.js:1330:13)[39m
+[31m        at SchemaString.SchemaType.doValidate (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\schematype.js:1314:7)[39m
+[31m        at C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\document.js:2747:18[39m
+[31m        at processTicksAndRejections (node:internal/process/task_queues:78:11) {[39m
+[31m      properties: {[39m
+[31m        validator: [Function (anonymous)],[39m
+[31m        message: 'Please Enter Email',[39m
+[31m        type: 'required',[39m
+[31m        path: 'email',[39m
+[31m        value: ''[39m
+[31m      },[39m
+[31m      kind: 'required',[39m
+[31m      path: 'email',[39m
+[31m      value: '',[39m
+[31m      reason: undefined,[39m
+[31m      [Symbol(mongoose:validatorError)]: true[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '23 05 2022 06:24:51'[39m
+[31m}[39m
+[31m{[39m
+[31m  properties: {[39m
+[31m    validator: [Function (anonymous)],[39m
+[31m    message: 'Please Enter Email',[39m
+[31m    type: 'required',[39m
+[31m    path: 'email',[39m
+[31m    value: ''[39m
+[31m  },[39m
+[31m  kind: 'required',[39m
+[31m  path: 'email',[39m
+[31m  value: '',[39m
+[31m  reason: undefined,[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '23 05 2022 06:26:00',[39m
+[31m  [Symbol(mongoose:validatorError)]: true[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'Please Enter Email',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '23 05 2022 06:27:07'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'Please Enter an Email',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '23 05 2022 06:55:38'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'Please Enter a valid Email',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '23 05 2022 06:55:52'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: undefined,[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '23 05 2022 07:04:41'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: ReferenceError: message is not defined[39m
+[31m      at C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\registerController.js:12:19[39m
+[31m      at Array.forEach (<anonymous>)[39m
+[31m      at handleError (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\registerController.js:10:31)[39m
+[31m      at register (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\registerController.js:40:5)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:96:5),[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> ReferenceError: message is not defined[39m
+[31m        at C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\registerController.js:12:19[39m
+[31m        at Array.forEach (<anonymous>)[39m
+[31m        at handleError (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\registerController.js:10:31)[39m
+[31m        at register (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\registerController.js:40:5)[39m
+[31m        at processTicksAndRejections (node:internal/process/task_queues:96:5)[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '23 05 2022 07:11:06'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: { password: '', email: 'Please Enter a valid Email' },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '23 05 2022 07:15:19'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: { password: '', email: 'Please Enter an Email' },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '23 05 2022 07:15:45'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: { password: '', email: 'Please Enter an Email' },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '23 05 2022 07:33:54'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: { password: '', email: 'Please Enter a valid Email' },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '23 05 2022 07:34:12'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: { password: '', email: 'Please Enter an Email' },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '23 05 2022 07:35:24'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'MONGODB connection Error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '24 05 2022 05:39:25'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m      at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m    errno: undefined,[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    syscall: 'querySrv',[39m
+[31m    hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m        at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m      errno: undefined,[39m
+[31m      code: 'ECONNREFUSED',[39m
+[31m      syscall: 'querySrv',[39m
+[31m      hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '24 05 2022 05:39:25'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'MONGODB connection Error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '24 05 2022 05:40:59'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m      at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m    errno: undefined,[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    syscall: 'querySrv',[39m
+[31m    hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m        at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m      errno: undefined,[39m
+[31m      code: 'ECONNREFUSED',[39m
+[31m      syscall: 'querySrv',[39m
+[31m      hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '24 05 2022 05:40:59'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: TypeError: function is not iterable (cannot read property Symbol(Symbol.iterator))[39m
+[31m      at Function.all (<anonymous>)[39m
+[31m      at getURL (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\getURL.js:15:32)[39m
+[31m      at login (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\loginController.js:35:22),[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> TypeError: function is not iterable (cannot read property Symbol(Symbol.iterator))[39m
+[31m        at Function.all (<anonymous>)[39m
+[31m        at getURL (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\getURL.js:15:32)[39m
+[31m        at login (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\loginController.js:35:22)[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '27 05 2022 03:55:30'[39m
+[31m}[39m
+[31m{[39m
+[31m  error: C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\getURL.js:15[39m
+[31m    const urls = await Promise.all(PromisedURLs);[39m
+[31m          ^[39m
+[31m  [39m
+[31m  SyntaxError: Identifier 'urls' has already been declared[39m
+[31m      at Object.compileFunction (node:vm:352:18)[39m
+[31m      at wrapSafe (node:internal/modules/cjs/loader:1032:15)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1067:27)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
+[31m      at Module.load (node:internal/modules/cjs/loader:981:32)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19)[39m
+[31m      at require (node:internal/modules/cjs/helpers:102:18)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\loginController.js:8:16)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14),[39m
+[31m  level: 'error',[39m
+[31m  message: "uncaughtException: Identifier 'urls' has already been declared\n" +[39m
+[31m    'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\getURL.js:15\n' +[39m
+[31m    '  const urls = await Promise.all(PromisedURLs);\n' +[39m
+[31m    '        ^\n' +[39m
+[31m    '\n' +[39m
+[31m    "SyntaxError: Identifier 'urls' has already been declared\n" +[39m
+[31m    '    at Object.compileFunction (node:vm:352:18)\n' +[39m
+[31m    '    at wrapSafe (node:internal/modules/cjs/loader:1032:15)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1067:27)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\auth\\loginController.js:8:16)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)',[39m
+[31m  stack: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\getURL.js:15\n' +[39m
+[31m    '  const urls = await Promise.all(PromisedURLs);\n' +[39m
+[31m    '        ^\n' +[39m
+[31m    '\n' +[39m
+[31m    "SyntaxError: Identifier 'urls' has already been declared\n" +[39m
+[31m    '    at Object.compileFunction (node:vm:352:18)\n' +[39m
+[31m    '    at wrapSafe (node:internal/modules/cjs/loader:1032:15)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1067:27)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\auth\\loginController.js:8:16)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)',[39m
+[31m  exception: true,[39m
+[31m  date: 'Fri May 27 2022 16:01:25 GMT+0530 (India Standard Time)',[39m
+[31m  process: {[39m
+[31m    pid: 11272,[39m
+[31m    uid: null,[39m
+[31m    gid: null,[39m
+[31m    cwd: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server',[39m
+[31m    execPath: 'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m    version: 'v16.14.2',[39m
+[31m    argv: [[39m
+[31m      'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ],[39m
+[31m    memoryUsage: {[39m
+[31m      rss: 80818176,[39m
+[31m      heapTotal: 59625472,[39m
+[31m      heapUsed: 41208904,[39m
+[31m      external: 26052764,[39m
+[31m      arrayBuffers: 20009681[39m
+[31m    }[39m
+[31m  },[39m
+[31m  os: { loadavg: [ 0, 0, 0 ], uptime: 14188 },[39m
+[31m  trace: [[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'node:vm',[39m
+[31m      function: 'Object.compileFunction',[39m
+[31m      line: 352,[39m
+[31m      method: 'compileFunction',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 15,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'wrapSafe',[39m
+[31m      line: 1032,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 27,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1067,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 32,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.load',[39m
+[31m      line: 981,[39m
+[31m      method: 'load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 822,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'node:internal/modules/cjs/helpers',[39m
+[31m      function: 'require',[39m
+[31m      line: 102,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 16,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\auth\\loginController.js',[39m
+[31m      function: null,[39m
+[31m      line: 8,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    }[39m
+[31m  ],[39m
+[31m  timestamp: '27 05 2022 04:01:25'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: '::1 - - [28/May/2022:10:24:36 +0000] "POST / HTTP/1.1" 500 2 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 Edg/101.0.1210.53"\n',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '28 05 2022 03:54:36'[39m
+[31m}[39m
+[31m{[39m
+[31m  error: C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\authenticatUser.js:10[39m
+[31m      (req.headers['cookie']) {[39m
+[31m                              ^[39m
+[31m  [39m
+[31m  SyntaxError: Unexpected token '{'[39m
+[31m      at Object.compileFunction (node:vm:352:18)[39m
+[31m      at wrapSafe (node:internal/modules/cjs/loader:1032:15)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1067:27)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
+[31m      at Module.load (node:internal/modules/cjs/loader:981:32)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19)[39m
+[31m      at require (node:internal/modules/cjs/helpers:102:18)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\app.js:34:26)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14),[39m
+[31m  level: 'error',[39m
+[31m  message: "uncaughtException: Unexpected token '{'\n" +[39m
+[31m    'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\authenticatUser.js:10\n' +[39m
+[31m    "    (req.headers['cookie']) {\n" +[39m
+[31m    '                            ^\n' +[39m
+[31m    '\n' +[39m
+[31m    "SyntaxError: Unexpected token '{'\n" +[39m
+[31m    '    at Object.compileFunction (node:vm:352:18)\n' +[39m
+[31m    '    at wrapSafe (node:internal/modules/cjs/loader:1032:15)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1067:27)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:34:26)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)',[39m
+[31m  stack: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\authenticatUser.js:10\n' +[39m
+[31m    "    (req.headers['cookie']) {\n" +[39m
+[31m    '                            ^\n' +[39m
+[31m    '\n' +[39m
+[31m    "SyntaxError: Unexpected token '{'\n" +[39m
+[31m    '    at Object.compileFunction (node:vm:352:18)\n' +[39m
+[31m    '    at wrapSafe (node:internal/modules/cjs/loader:1032:15)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1067:27)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:34:26)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)',[39m
+[31m  exception: true,[39m
+[31m  date: 'Sun May 29 2022 14:29:20 GMT+0530 (India Standard Time)',[39m
+[31m  process: {[39m
+[31m    pid: 2120,[39m
+[31m    uid: null,[39m
+[31m    gid: null,[39m
+[31m    cwd: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server',[39m
+[31m    execPath: 'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m    version: 'v16.14.2',[39m
+[31m    argv: [[39m
+[31m      'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ],[39m
+[31m    memoryUsage: {[39m
+[31m      rss: 77508608,[39m
+[31m      heapTotal: 59101184,[39m
+[31m      heapUsed: 36564824,[39m
+[31m      external: 22098989,[39m
+[31m      arrayBuffers: 19676251[39m
+[31m    }[39m
+[31m  },[39m
+[31m  os: { loadavg: [ 0, 0, 0 ], uptime: 181467 },[39m
+[31m  trace: [[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'node:vm',[39m
+[31m      function: 'Object.compileFunction',[39m
+[31m      line: 352,[39m
+[31m      method: 'compileFunction',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 15,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'wrapSafe',[39m
+[31m      line: 1032,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 27,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1067,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 32,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.load',[39m
+[31m      line: 981,[39m
+[31m      method: 'load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 822,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'node:internal/modules/cjs/helpers',[39m
+[31m      function: 'require',[39m
+[31m      line: 102,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 26,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js',[39m
+[31m      function: null,[39m
+[31m      line: 34,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    }[39m
+[31m  ],[39m
+[31m  timestamp: '29 05 2022 02:29:20'[39m
+[31m}[39m
+[31m{[39m
+[31m  error: TypeError: Cannot create property 'next' on string '/:short'[39m
+[31m      at Function.handle (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\index.js:160:12)[39m
+[31m      at router (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\index.js:47:12)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\routes\deleteUrl.js:4:1)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
+[31m      at Module.load (node:internal/modules/cjs/loader:981:32)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19)[39m
+[31m      at require (node:internal/modules/cjs/helpers:102:18)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\app.js:57:14),[39m
+[31m  level: 'error',[39m
+[31m  message: "uncaughtException: Cannot create property 'next' on string '/:short'\n" +[39m
+[31m    "TypeError: Cannot create property 'next' on string '/:short'\n" +[39m
+[31m    '    at Function.handle (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js:160:12)\n' +[39m
+[31m    '    at router (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\deleteUrl.js:4:1)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:57:14)',[39m
+[31m  stack: "TypeError: Cannot create property 'next' on string '/:short'\n" +[39m
+[31m    '    at Function.handle (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js:160:12)\n' +[39m
+[31m    '    at router (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\deleteUrl.js:4:1)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:57:14)',[39m
+[31m  exception: true,[39m
+[31m  date: 'Sun May 29 2022 18:12:04 GMT+0530 (India Standard Time)',[39m
+[31m  process: {[39m
+[31m    pid: 15188,[39m
+[31m    uid: null,[39m
+[31m    gid: null,[39m
+[31m    cwd: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server',[39m
+[31m    execPath: 'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m    version: 'v16.14.2',[39m
+[31m    argv: [[39m
+[31m      'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ],[39m
+[31m    memoryUsage: {[39m
+[31m      rss: 81649664,[39m
+[31m      heapTotal: 59887616,[39m
+[31m      heapUsed: 41319624,[39m
+[31m      external: 26052764,[39m
+[31m      arrayBuffers: 20001489[39m
+[31m    }[39m
+[31m  },[39m
+[31m  os: { loadavg: [ 0, 0, 0 ], uptime: 194831 },[39m
+[31m  trace: [[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js',[39m
+[31m      function: 'Function.handle',[39m
+[31m      line: 160,[39m
+[31m      method: 'handle',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js',[39m
+[31m      function: 'router',[39m
+[31m      line: 47,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 1,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\deleteUrl.js',[39m
+[31m      function: null,[39m
+[31m      line: 4,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 32,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.load',[39m
+[31m      line: 981,[39m
+[31m      method: 'load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 822,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'node:internal/modules/cjs/helpers',[39m
+[31m      function: 'require',[39m
+[31m      line: 102,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js',[39m
+[31m      function: null,[39m
+[31m      line: 57,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    }[39m
+[31m  ],[39m
+[31m  timestamp: '29 05 2022 06:12:04'[39m
+[31m}[39m
+[31m{[39m
+[31m  error: TypeError: Cannot create property 'next' on string '/:short'[39m
+[31m      at Function.handle (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\index.js:160:12)[39m
+[31m      at router (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\index.js:47:12)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\routes\deleteUrl.js:4:1)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
+[31m      at Module.load (node:internal/modules/cjs/loader:981:32)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19)[39m
+[31m      at require (node:internal/modules/cjs/helpers:102:18)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\app.js:57:14),[39m
+[31m  level: 'error',[39m
+[31m  message: "uncaughtException: Cannot create property 'next' on string '/:short'\n" +[39m
+[31m    "TypeError: Cannot create property 'next' on string '/:short'\n" +[39m
+[31m    '    at Function.handle (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js:160:12)\n' +[39m
+[31m    '    at router (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\deleteUrl.js:4:1)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:57:14)',[39m
+[31m  stack: "TypeError: Cannot create property 'next' on string '/:short'\n" +[39m
+[31m    '    at Function.handle (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js:160:12)\n' +[39m
+[31m    '    at router (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\deleteUrl.js:4:1)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:57:14)',[39m
+[31m  exception: true,[39m
+[31m  date: 'Sun May 29 2022 18:13:17 GMT+0530 (India Standard Time)',[39m
+[31m  process: {[39m
+[31m    pid: 8008,[39m
+[31m    uid: null,[39m
+[31m    gid: null,[39m
+[31m    cwd: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server',[39m
+[31m    execPath: 'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m    version: 'v16.14.2',[39m
+[31m    argv: [[39m
+[31m      'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ],[39m
+[31m    memoryUsage: {[39m
+[31m      rss: 81850368,[39m
+[31m      heapTotal: 59625472,[39m
+[31m      heapUsed: 41320400,[39m
+[31m      external: 26052764,[39m
+[31m      arrayBuffers: 20009681[39m
+[31m    }[39m
+[31m  },[39m
+[31m  os: { loadavg: [ 0, 0, 0 ], uptime: 194904 },[39m
+[31m  trace: [[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js',[39m
+[31m      function: 'Function.handle',[39m
+[31m      line: 160,[39m
+[31m      method: 'handle',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js',[39m
+[31m      function: 'router',[39m
+[31m      line: 47,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 1,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\deleteUrl.js',[39m
+[31m      function: null,[39m
+[31m      line: 4,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 32,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.load',[39m
+[31m      line: 981,[39m
+[31m      method: 'load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 822,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'node:internal/modules/cjs/helpers',[39m
+[31m      function: 'require',[39m
+[31m      line: 102,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js',[39m
+[31m      function: null,[39m
+[31m      line: 57,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    }[39m
+[31m  ],[39m
+[31m  timestamp: '29 05 2022 06:13:17'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'MONGODB connection Error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '29 05 2022 06:58:18'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m      at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m    errno: undefined,[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    syscall: 'querySrv',[39m
+[31m    hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m        at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m      errno: undefined,[39m
+[31m      code: 'ECONNREFUSED',[39m
+[31m      syscall: 'querySrv',[39m
+[31m      hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '29 05 2022 06:58:18'[39m
+[31m}[39m
+[31m{[39m
+[31m  error: Error: Cannot find module '../../models/userModel'[39m
+[31m  Require stack:[39m
+[31m  - C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\getURL.js[39m
+[31m  - C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\loginController.js[39m
+[31m  - C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\routes\auth\login.js[39m
+[31m  - C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\app.js[39m
+[31m  - C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\bin\www[39m
+[31m      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:778:27)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19)[39m
+[31m      at require (node:internal/modules/cjs/helpers:102:18)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\getURL.js:2:14)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
+[31m      at Module.load (node:internal/modules/cjs/loader:981:32)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19) {[39m
+[31m    code: 'MODULE_NOT_FOUND',[39m
+[31m    requireStack: [[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\getURL.js',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\auth\\loginController.js',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\login.js',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ][39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  message: "uncaughtException: Cannot find module '../../models/userModel'\n" +[39m
+[31m    'Require stack:\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\getURL.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\auth\\loginController.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\login.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www\n' +[39m
+[31m    "Error: Cannot find module '../../models/userModel'\n" +[39m
+[31m    'Require stack:\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\getURL.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\auth\\loginController.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\login.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www\n' +[39m
+[31m    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\getURL.js:2:14)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',[39m
+[31m  stack: "Error: Cannot find module '../../models/userModel'\n" +[39m
+[31m    'Require stack:\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\getURL.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\auth\\loginController.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\login.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www\n' +[39m
+[31m    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\getURL.js:2:14)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',[39m
+[31m  exception: true,[39m
+[31m  date: 'Sun May 29 2022 19:15:17 GMT+0530 (India Standard Time)',[39m
+[31m  process: {[39m
+[31m    pid: 5344,[39m
+[31m    uid: null,[39m
+[31m    gid: null,[39m
+[31m    cwd: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server',[39m
+[31m    execPath: 'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m    version: 'v16.14.2',[39m
+[31m    argv: [[39m
+[31m      'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ],[39m
+[31m    memoryUsage: {[39m
+[31m      rss: 81752064,[39m
+[31m      heapTotal: 59625472,[39m
+[31m      heapUsed: 41163096,[39m
+[31m      external: 26052764,[39m
+[31m      arrayBuffers: 20009681[39m
+[31m    }[39m
+[31m  },[39m
+[31m  os: { loadavg: [ 0, 0, 0 ], uptime: 198624 },[39m
+[31m  trace: [[39m
+[31m    {[39m
+[31m      column: 15,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._resolveFilename',[39m
+[31m      line: 933,[39m
+[31m      method: '_resolveFilename',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 27,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 778,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'node:internal/modules/cjs/helpers',[39m
+[31m      function: 'require',[39m
+[31m      line: 102,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\controller\\getURL.js',[39m
+[31m      function: null,[39m
+[31m      line: 2,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 32,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.load',[39m
+[31m      line: 981,[39m
+[31m      method: 'load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 822,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    }[39m
+[31m  ],[39m
+[31m  timestamp: '29 05 2022 07:15:17'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: CastError: Cast to number failed for value "L3LWxaRk" (type string) at path "urls"[39m
+[31m      at model.Query.exec (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4719:21)[39m
+[31m      at model.Query.Query.then (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4818:15)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:96:5) {[39m
+[31m    messageFormat: undefined,[39m
+[31m    stringValue: '"L3LWxaRk"',[39m
+[31m    kind: 'number',[39m
+[31m    value: 'L3LWxaRk',[39m
+[31m    path: 'urls',[39m
+[31m    reason: undefined,[39m
+[31m    valueType: 'string'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> CastError: Cast to number failed for value "L3LWxaRk" (type string) at path "urls"[39m
+[31m        at model.Query.exec (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4719:21)[39m
+[31m        at model.Query.Query.then (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4818:15)[39m
+[31m        at processTicksAndRejections (node:internal/process/task_queues:96:5) {[39m
+[31m      messageFormat: undefined,[39m
+[31m      stringValue: '"L3LWxaRk"',[39m
+[31m      kind: 'number',[39m
+[31m      value: 'L3LWxaRk',[39m
+[31m      path: 'urls',[39m
+[31m      reason: undefined,[39m
+[31m      valueType: 'string'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '29 05 2022 07:56:50'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: CastError: Cast to number failed for value "4oV2k9z2" (type string) at path "urls"[39m
+[31m      at model.Query.exec (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4719:21)[39m
+[31m      at model.Query.Query.then (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4818:15)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:96:5)[39m
+[31m      at runNextTicks (node:internal/process/task_queues:65:3)[39m
+[31m      at processImmediate (node:internal/timers:437:9) {[39m
+[31m    messageFormat: undefined,[39m
+[31m    stringValue: '"4oV2k9z2"',[39m
+[31m    kind: 'number',[39m
+[31m    value: '4oV2k9z2',[39m
+[31m    path: 'urls',[39m
+[31m    reason: undefined,[39m
+[31m    valueType: 'string'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> CastError: Cast to number failed for value "4oV2k9z2" (type string) at path "urls"[39m
+[31m        at model.Query.exec (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4719:21)[39m
+[31m        at model.Query.Query.then (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4818:15)[39m
+[31m        at processTicksAndRejections (node:internal/process/task_queues:96:5)[39m
+[31m        at runNextTicks (node:internal/process/task_queues:65:3)[39m
+[31m        at processImmediate (node:internal/timers:437:9) {[39m
+[31m      messageFormat: undefined,[39m
+[31m      stringValue: '"4oV2k9z2"',[39m
+[31m      kind: 'number',[39m
+[31m      value: '4oV2k9z2',[39m
+[31m      path: 'urls',[39m
+[31m      reason: undefined,[39m
+[31m      valueType: 'string'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '29 05 2022 07:56:50'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: CastError: Cast to number failed for value "8gLhiPZ6" (type string) at path "urls"[39m
+[31m      at model.Query.exec (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4719:21)[39m
+[31m      at model.Query.Query.then (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4818:15)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:96:5) {[39m
+[31m    messageFormat: undefined,[39m
+[31m    stringValue: '"8gLhiPZ6"',[39m
+[31m    kind: 'number',[39m
+[31m    value: '8gLhiPZ6',[39m
+[31m    path: 'urls',[39m
+[31m    reason: undefined,[39m
+[31m    valueType: 'string'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> CastError: Cast to number failed for value "8gLhiPZ6" (type string) at path "urls"[39m
+[31m        at model.Query.exec (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4719:21)[39m
+[31m        at model.Query.Query.then (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4818:15)[39m
+[31m        at processTicksAndRejections (node:internal/process/task_queues:96:5) {[39m
+[31m      messageFormat: undefined,[39m
+[31m      stringValue: '"8gLhiPZ6"',[39m
+[31m      kind: 'number',[39m
+[31m      value: '8gLhiPZ6',[39m
+[31m      path: 'urls',[39m
+[31m      reason: undefined,[39m
+[31m      valueType: 'string'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '29 05 2022 07:56:51'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: CastError: Cast to number failed for value "CsR5cTg4" (type string) at path "urls"[39m
+[31m      at model.Query.exec (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4719:21)[39m
+[31m      at model.Query.Query.then (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4818:15)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:96:5)[39m
+[31m      at runNextTicks (node:internal/process/task_queues:65:3)[39m
+[31m      at processImmediate (node:internal/timers:437:9) {[39m
+[31m    messageFormat: undefined,[39m
+[31m    stringValue: '"CsR5cTg4"',[39m
+[31m    kind: 'number',[39m
+[31m    value: 'CsR5cTg4',[39m
+[31m    path: 'urls',[39m
+[31m    reason: undefined,[39m
+[31m    valueType: 'string'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> CastError: Cast to number failed for value "CsR5cTg4" (type string) at path "urls"[39m
+[31m        at model.Query.exec (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4719:21)[39m
+[31m        at model.Query.Query.then (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4818:15)[39m
+[31m        at processTicksAndRejections (node:internal/process/task_queues:96:5)[39m
+[31m        at runNextTicks (node:internal/process/task_queues:65:3)[39m
+[31m        at processImmediate (node:internal/timers:437:9) {[39m
+[31m      messageFormat: undefined,[39m
+[31m      stringValue: '"CsR5cTg4"',[39m
+[31m      kind: 'number',[39m
+[31m      value: 'CsR5cTg4',[39m
+[31m      path: 'urls',[39m
+[31m      reason: undefined,[39m
+[31m      valueType: 'string'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '29 05 2022 07:56:51'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: CastError: Cast to number failed for value "XhLVTjZE" (type string) at path "urls"[39m
+[31m      at model.Query.exec (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4719:21)[39m
+[31m      at model.Query.Query.then (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4818:15)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:96:5)[39m
+[31m      at runNextTicks (node:internal/process/task_queues:65:3)[39m
+[31m      at processImmediate (node:internal/timers:437:9) {[39m
+[31m    messageFormat: undefined,[39m
+[31m    stringValue: '"XhLVTjZE"',[39m
+[31m    kind: 'number',[39m
+[31m    value: 'XhLVTjZE',[39m
+[31m    path: 'urls',[39m
+[31m    reason: undefined,[39m
+[31m    valueType: 'string'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> CastError: Cast to number failed for value "XhLVTjZE" (type string) at path "urls"[39m
+[31m        at model.Query.exec (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4719:21)[39m
+[31m        at model.Query.Query.then (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4818:15)[39m
+[31m        at processTicksAndRejections (node:internal/process/task_queues:96:5)[39m
+[31m        at runNextTicks (node:internal/process/task_queues:65:3)[39m
+[31m        at processImmediate (node:internal/timers:437:9) {[39m
+[31m      messageFormat: undefined,[39m
+[31m      stringValue: '"XhLVTjZE"',[39m
+[31m      kind: 'number',[39m
+[31m      value: 'XhLVTjZE',[39m
+[31m      path: 'urls',[39m
+[31m      reason: undefined,[39m
+[31m      valueType: 'string'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '29 05 2022 07:56:52'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: CastError: Cast to number failed for value "WtZa885d" (type string) at path "urls"[39m
+[31m      at model.Query.exec (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4719:21)[39m
+[31m      at model.Query.Query.then (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4818:15)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:96:5) {[39m
+[31m    messageFormat: undefined,[39m
+[31m    stringValue: '"WtZa885d"',[39m
+[31m    kind: 'number',[39m
+[31m    value: 'WtZa885d',[39m
+[31m    path: 'urls',[39m
+[31m    reason: undefined,[39m
+[31m    valueType: 'string'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> CastError: Cast to number failed for value "WtZa885d" (type string) at path "urls"[39m
+[31m        at model.Query.exec (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4719:21)[39m
+[31m        at model.Query.Query.then (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\mongoose\lib\query.js:4818:15)[39m
+[31m        at processTicksAndRejections (node:internal/process/task_queues:96:5) {[39m
+[31m      messageFormat: undefined,[39m
+[31m      stringValue: '"WtZa885d"',[39m
+[31m      kind: 'number',[39m
+[31m      value: 'WtZa885d',[39m
+[31m      path: 'urls',[39m
+[31m      reason: undefined,[39m
+[31m      valueType: 'string'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '29 05 2022 07:56:52'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'MONGODB connection Error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 03:28:35'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m      at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m    errno: undefined,[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    syscall: 'querySrv',[39m
+[31m    hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m        at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m      errno: undefined,[39m
+[31m      code: 'ECONNREFUSED',[39m
+[31m      syscall: 'querySrv',[39m
+[31m      hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 03:28:35'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'MONGODB connection Error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:47:54'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m      at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m    errno: undefined,[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    syscall: 'querySrv',[39m
+[31m    hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m        at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m      errno: undefined,[39m
+[31m      code: 'ECONNREFUSED',[39m
+[31m      syscall: 'querySrv',[39m
+[31m      hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:47:54'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'MONGODB connection Error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:51:40'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m      at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m    errno: undefined,[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    syscall: 'querySrv',[39m
+[31m    hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m        at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m      errno: undefined,[39m
+[31m      code: 'ECONNREFUSED',[39m
+[31m      syscall: 'querySrv',[39m
+[31m      hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:51:40'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'MONGODB connection Error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:53:15'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m      at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m    errno: undefined,[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    syscall: 'querySrv',[39m
+[31m    hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m        at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m      errno: undefined,[39m
+[31m      code: 'ECONNREFUSED',[39m
+[31m      syscall: 'querySrv',[39m
+[31m      hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:53:15'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'MONGODB connection Error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:53:55'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m      at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m    errno: undefined,[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    syscall: 'querySrv',[39m
+[31m    hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m        at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m      errno: undefined,[39m
+[31m      code: 'ECONNREFUSED',[39m
+[31m      syscall: 'querySrv',[39m
+[31m      hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:53:55'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'MONGODB connection Error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:54:52'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m      at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m    errno: undefined,[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    syscall: 'querySrv',[39m
+[31m    hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m        at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m      errno: undefined,[39m
+[31m      code: 'ECONNREFUSED',[39m
+[31m      syscall: 'querySrv',[39m
+[31m      hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:54:52'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'MONGODB connection Error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:55:10'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m      at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m    errno: undefined,[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    syscall: 'querySrv',[39m
+[31m    hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m        at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m      errno: undefined,[39m
+[31m      code: 'ECONNREFUSED',[39m
+[31m      syscall: 'querySrv',[39m
+[31m      hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:55:10'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'MONGODB connection Error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:55:17'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m      at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m    errno: undefined,[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    syscall: 'querySrv',[39m
+[31m    hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m        at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m      errno: undefined,[39m
+[31m      code: 'ECONNREFUSED',[39m
+[31m      syscall: 'querySrv',[39m
+[31m      hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:55:17'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function createError[39m
+[31m      at new NodeError (node:internal/errors:371:5)[39m
+[31m      at Function.from (node:buffer:323:9)[39m
+[31m      at ServerResponse.send (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\response.js:189:22)[39m
+[31m      at forgotPassword (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\forgotPassword.js:23:16)[39m
+[31m      at Layer.handle [as handle_request] (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m      at next (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\route.js:137:13)[39m
+[31m      at Route.dispatch (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\route.js:112:3)[39m
+[31m      at Layer.handle [as handle_request] (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m      at C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\index.js:281:22[39m
+[31m      at Function.process_params (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\index.js:335:12) {[39m
+[31m    code: 'ERR_INVALID_ARG_TYPE'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function createError[39m
+[31m        at new NodeError (node:internal/errors:371:5)[39m
+[31m        at Function.from (node:buffer:323:9)[39m
+[31m        at ServerResponse.send (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\response.js:189:22)[39m
+[31m        at forgotPassword (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\forgotPassword.js:23:16)[39m
+[31m        at Layer.handle [as handle_request] (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m        at next (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\route.js:137:13)[39m
+[31m        at Route.dispatch (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\route.js:112:3)[39m
+[31m        at Layer.handle [as handle_request] (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m        at C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\index.js:281:22[39m
+[31m        at Function.process_params (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\index.js:335:12) {[39m
+[31m      code: 'ERR_INVALID_ARG_TYPE'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:55:24'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'MONGODB connection Error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:56:47'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m      at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m    errno: undefined,[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    syscall: 'querySrv',[39m
+[31m    hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m        at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m      errno: undefined,[39m
+[31m      code: 'ECONNREFUSED',[39m
+[31m      syscall: 'querySrv',[39m
+[31m      hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:56:47'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'MONGODB connection Error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:57:10'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m      at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m    errno: undefined,[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    syscall: 'querySrv',[39m
+[31m    hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m        at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m      errno: undefined,[39m
+[31m      code: 'ECONNREFUSED',[39m
+[31m      syscall: 'querySrv',[39m
+[31m      hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:57:10'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function createError[39m
+[31m      at new NodeError (node:internal/errors:371:5)[39m
+[31m      at Function.from (node:buffer:323:9)[39m
+[31m      at ServerResponse.send (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\response.js:189:22)[39m
+[31m      at forgotPassword (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\forgotPassword.js:22:16) {[39m
+[31m    code: 'ERR_INVALID_ARG_TYPE'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function createError[39m
+[31m        at new NodeError (node:internal/errors:371:5)[39m
+[31m        at Function.from (node:buffer:323:9)[39m
+[31m        at ServerResponse.send (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\response.js:189:22)[39m
+[31m        at forgotPassword (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\forgotPassword.js:22:16) {[39m
+[31m      code: 'ERR_INVALID_ARG_TYPE'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:57:28'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'MONGODB connection Error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:58:50'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m      at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m    errno: undefined,[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    syscall: 'querySrv',[39m
+[31m    hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.sdnup.mongodb.net[39m
+[31m        at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19) {[39m
+[31m      errno: undefined,[39m
+[31m      code: 'ECONNREFUSED',[39m
+[31m      syscall: 'querySrv',[39m
+[31m      hostname: '_mongodb._tcp.cluster0.sdnup.mongodb.net'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '31 05 2022 06:58:50'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function createError[39m
+[31m      at new NodeError (node:internal/errors:371:5)[39m
+[31m      at Function.from (node:buffer:323:9)[39m
+[31m      at ServerResponse.send (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\response.js:189:22)[39m
+[31m      at forgotPassword (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\forgotPassword.js:27:16)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:96:5) {[39m
+[31m    code: 'ERR_INVALID_ARG_TYPE'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function createError[39m
+[31m        at new NodeError (node:internal/errors:371:5)[39m
+[31m        at Function.from (node:buffer:323:9)[39m
+[31m        at ServerResponse.send (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\response.js:189:22)[39m
+[31m        at forgotPassword (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\forgotPassword.js:27:16)[39m
+[31m        at processTicksAndRejections (node:internal/process/task_queues:96:5) {[39m
+[31m      code: 'ERR_INVALID_ARG_TYPE'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '05 06 2022 12:56:25'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: '{"ErrorIdentifier":"a98142b4-4366-4263-9558-ea481624dcac","ErrorCode":"mj-0004","StatusCode":400,"ErrorMessage":"Type mismatch. Expected type \\"string\\".","ErrorRelatedTo":["Messages.To"]}',[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '05 06 2022 01:29:24'[39m
+[31m}[39m
+[31m{[39m
+[31m  error: Error: Cannot find module './routes/auth/otp'[39m
+[31m  Require stack:[39m
+[31m  - C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\app.js[39m
+[31m  - C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\bin\www[39m
+[31m      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:778:27)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19)[39m
+[31m      at require (node:internal/modules/cjs/helpers:102:18)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\app.js:58:17)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
+[31m      at Module.load (node:internal/modules/cjs/loader:981:32)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19) {[39m
+[31m    code: 'MODULE_NOT_FOUND',[39m
+[31m    requireStack: [[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ][39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  message: "uncaughtException: Cannot find module './routes/auth/otp'\n" +[39m
+[31m    'Require stack:\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www\n' +[39m
+[31m    "Error: Cannot find module './routes/auth/otp'\n" +[39m
+[31m    'Require stack:\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www\n' +[39m
+[31m    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:58:17)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',[39m
+[31m  stack: "Error: Cannot find module './routes/auth/otp'\n" +[39m
+[31m    'Require stack:\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www\n' +[39m
+[31m    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:58:17)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',[39m
+[31m  exception: true,[39m
+[31m  date: 'Sun Jun 05 2022 18:47:49 GMT+0530 (India Standard Time)',[39m
+[31m  process: {[39m
+[31m    pid: 904,[39m
+[31m    uid: null,[39m
+[31m    gid: null,[39m
+[31m    cwd: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server',[39m
+[31m    execPath: 'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m    version: 'v16.14.2',[39m
+[31m    argv: [[39m
+[31m      'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ],[39m
+[31m    memoryUsage: {[39m
+[31m      rss: 80756736,[39m
+[31m      heapTotal: 59625472,[39m
+[31m      heapUsed: 41422304,[39m
+[31m      external: 26060956,[39m
+[31m      arrayBuffers: 20017873[39m
+[31m    }[39m
+[31m  },[39m
+[31m  os: { loadavg: [ 0, 0, 0 ], uptime: 28250 },[39m
+[31m  trace: [[39m
+[31m    {[39m
+[31m      column: 15,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._resolveFilename',[39m
+[31m      line: 933,[39m
+[31m      method: '_resolveFilename',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 27,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 778,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'node:internal/modules/cjs/helpers',[39m
+[31m      function: 'require',[39m
+[31m      line: 102,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 17,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js',[39m
+[31m      function: null,[39m
+[31m      line: 58,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 32,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.load',[39m
+[31m      line: 981,[39m
+[31m      method: 'load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 822,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    }[39m
+[31m  ],[39m
+[31m  timestamp: '05 06 2022 06:47:49'[39m
+[31m}[39m
+[31m{[39m
+[31m  error: TypeError: Router.use() requires a middleware function but got a Object[39m
+[31m      at Function.use (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\router\index.js:458:13)[39m
+[31m      at Function.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\application.js:220:21)[39m
+[31m      at Array.forEach (<anonymous>)[39m
+[31m      at Function.use (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\application.js:217:7)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\app.js:58:5)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
+[31m      at Module.load (node:internal/modules/cjs/loader:981:32)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19),[39m
+[31m  level: 'error',[39m
+[31m  message: 'uncaughtException: Router.use() requires a middleware function but got a Object\n' +[39m
+[31m    'TypeError: Router.use() requires a middleware function but got a Object\n' +[39m
+[31m    '    at Function.use (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js:458:13)\n' +[39m
+[31m    '    at Function.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\application.js:220:21)\n' +[39m
+[31m    '    at Array.forEach (<anonymous>)\n' +[39m
+[31m    '    at Function.use (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\application.js:217:7)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:58:5)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',[39m
+[31m  stack: 'TypeError: Router.use() requires a middleware function but got a Object\n' +[39m
+[31m    '    at Function.use (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js:458:13)\n' +[39m
+[31m    '    at Function.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\application.js:220:21)\n' +[39m
+[31m    '    at Array.forEach (<anonymous>)\n' +[39m
+[31m    '    at Function.use (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\application.js:217:7)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:58:5)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',[39m
+[31m  exception: true,[39m
+[31m  date: 'Sun Jun 05 2022 18:48:24 GMT+0530 (India Standard Time)',[39m
+[31m  process: {[39m
+[31m    pid: 12064,[39m
+[31m    uid: null,[39m
+[31m    gid: null,[39m
+[31m    cwd: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server',[39m
+[31m    execPath: 'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m    version: 'v16.14.2',[39m
+[31m    argv: [[39m
+[31m      'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ],[39m
+[31m    memoryUsage: {[39m
+[31m      rss: 80703488,[39m
+[31m      heapTotal: 59625472,[39m
+[31m      heapUsed: 41446992,[39m
+[31m      external: 26069148,[39m
+[31m      arrayBuffers: 20026065[39m
+[31m    }[39m
+[31m  },[39m
+[31m  os: { loadavg: [ 0, 0, 0 ], uptime: 28284 },[39m
+[31m  trace: [[39m
+[31m    {[39m
+[31m      column: 13,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\router\\index.js',[39m
+[31m      function: 'Function.use',[39m
+[31m      line: 458,[39m
+[31m      method: 'use',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 21,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\application.js',[39m
+[31m      function: null,[39m
+[31m      line: 220,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: null,[39m
+[31m      file: null,[39m
+[31m      function: 'Array.forEach',[39m
+[31m      line: null,[39m
+[31m      method: 'forEach',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 7,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\node_modules\\express\\lib\\application.js',[39m
+[31m      function: 'Function.use',[39m
+[31m      line: 217,[39m
+[31m      method: 'use',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 5,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js',[39m
+[31m      function: null,[39m
+[31m      line: 58,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 32,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.load',[39m
+[31m      line: 981,[39m
+[31m      method: 'load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 822,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    }[39m
+[31m  ],[39m
+[31m  timestamp: '05 06 2022 06:48:24'[39m
+[31m}[39m
+[31m{[39m
+[31m  error: ReferenceError: otpController is not defined[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\routes\auth\otp.js:3:18)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
+[31m      at Module.load (node:internal/modules/cjs/loader:981:32)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19)[39m
+[31m      at require (node:internal/modules/cjs/helpers:102:18)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\app.js:58:17)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10),[39m
+[31m  level: 'error',[39m
+[31m  message: 'uncaughtException: otpController is not defined\n' +[39m
+[31m    'ReferenceError: otpController is not defined\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\otp.js:3:18)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:58:17)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)',[39m
+[31m  stack: 'ReferenceError: otpController is not defined\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\otp.js:3:18)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:58:17)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)',[39m
+[31m  exception: true,[39m
+[31m  date: 'Sun Jun 05 2022 18:49:44 GMT+0530 (India Standard Time)',[39m
+[31m  process: {[39m
+[31m    pid: 10896,[39m
+[31m    uid: null,[39m
+[31m    gid: null,[39m
+[31m    cwd: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server',[39m
+[31m    execPath: 'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m    version: 'v16.14.2',[39m
+[31m    argv: [[39m
+[31m      'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ],[39m
+[31m    memoryUsage: {[39m
+[31m      rss: 80822272,[39m
+[31m      heapTotal: 59625472,[39m
+[31m      heapUsed: 41406152,[39m
+[31m      external: 26060956,[39m
+[31m      arrayBuffers: 20017873[39m
+[31m    }[39m
+[31m  },[39m
+[31m  os: { loadavg: [ 0, 0, 0 ], uptime: 28365 },[39m
+[31m  trace: [[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\otp.js',[39m
+[31m      function: null,[39m
+[31m      line: 3,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 32,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.load',[39m
+[31m      line: 981,[39m
+[31m      method: 'load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 822,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'node:internal/modules/cjs/helpers',[39m
+[31m      function: 'require',[39m
+[31m      line: 102,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 17,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js',[39m
+[31m      function: null,[39m
+[31m      line: 58,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    }[39m
+[31m  ],[39m
+[31m  timestamp: '05 06 2022 06:49:44'[39m
+[31m}[39m
+[31m{[39m
+[31m  error: ReferenceError: otpController is not defined[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\routes\auth\otp.js:3:18)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
+[31m      at Module.load (node:internal/modules/cjs/loader:981:32)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19)[39m
+[31m      at require (node:internal/modules/cjs/helpers:102:18)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\app.js:58:17)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10),[39m
+[31m  level: 'error',[39m
+[31m  message: 'uncaughtException: otpController is not defined\n' +[39m
+[31m    'ReferenceError: otpController is not defined\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\otp.js:3:18)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:58:17)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)',[39m
+[31m  stack: 'ReferenceError: otpController is not defined\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\otp.js:3:18)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:58:17)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)',[39m
+[31m  exception: true,[39m
+[31m  date: 'Sun Jun 05 2022 18:50:32 GMT+0530 (India Standard Time)',[39m
+[31m  process: {[39m
+[31m    pid: 8632,[39m
+[31m    uid: null,[39m
+[31m    gid: null,[39m
+[31m    cwd: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server',[39m
+[31m    execPath: 'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m    version: 'v16.14.2',[39m
+[31m    argv: [[39m
+[31m      'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ],[39m
+[31m    memoryUsage: {[39m
+[31m      rss: 80711680,[39m
+[31m      heapTotal: 59887616,[39m
+[31m      heapUsed: 41656608,[39m
+[31m      external: 26060956,[39m
+[31m      arrayBuffers: 20017873[39m
+[31m    }[39m
+[31m  },[39m
+[31m  os: { loadavg: [ 0, 0, 0 ], uptime: 28413 },[39m
+[31m  trace: [[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\otp.js',[39m
+[31m      function: null,[39m
+[31m      line: 3,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 32,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.load',[39m
+[31m      line: 981,[39m
+[31m      method: 'load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 822,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'node:internal/modules/cjs/helpers',[39m
+[31m      function: 'require',[39m
+[31m      line: 102,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 17,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js',[39m
+[31m      function: null,[39m
+[31m      line: 58,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    }[39m
+[31m  ],[39m
+[31m  timestamp: '05 06 2022 06:50:32'[39m
+[31m}[39m
+[31m{[39m
+[31m  error: ReferenceError: otpController is not defined[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\routes\auth\otp.js:3:18)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
+[31m      at Module.load (node:internal/modules/cjs/loader:981:32)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19)[39m
+[31m      at require (node:internal/modules/cjs/helpers:102:18)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\app.js:58:17)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10),[39m
+[31m  level: 'error',[39m
+[31m  message: 'uncaughtException: otpController is not defined\n' +[39m
+[31m    'ReferenceError: otpController is not defined\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\otp.js:3:18)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:58:17)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)',[39m
+[31m  stack: 'ReferenceError: otpController is not defined\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\otp.js:3:18)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:58:17)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)',[39m
+[31m  exception: true,[39m
+[31m  date: 'Sun Jun 05 2022 18:51:22 GMT+0530 (India Standard Time)',[39m
+[31m  process: {[39m
+[31m    pid: 14728,[39m
+[31m    uid: null,[39m
+[31m    gid: null,[39m
+[31m    cwd: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server',[39m
+[31m    execPath: 'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m    version: 'v16.14.2',[39m
+[31m    argv: [[39m
+[31m      'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ],[39m
+[31m    memoryUsage: {[39m
+[31m      rss: 80601088,[39m
+[31m      heapTotal: 59625472,[39m
+[31m      heapUsed: 41205520,[39m
+[31m      external: 26060956,[39m
+[31m      arrayBuffers: 20009681[39m
+[31m    }[39m
+[31m  },[39m
+[31m  os: { loadavg: [ 0, 0, 0 ], uptime: 28462 },[39m
+[31m  trace: [[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\otp.js',[39m
+[31m      function: null,[39m
+[31m      line: 3,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 32,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.load',[39m
+[31m      line: 981,[39m
+[31m      method: 'load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 822,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'node:internal/modules/cjs/helpers',[39m
+[31m      function: 'require',[39m
+[31m      line: 102,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 17,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js',[39m
+[31m      function: null,[39m
+[31m      line: 58,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    }[39m
+[31m  ],[39m
+[31m  timestamp: '05 06 2022 06:51:22'[39m
+[31m}[39m
+[31m{[39m
+[31m  error: ReferenceError: otpController is not defined[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\routes\auth\otp.js:3:18)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
+[31m      at Module.load (node:internal/modules/cjs/loader:981:32)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19)[39m
+[31m      at require (node:internal/modules/cjs/helpers:102:18)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\app.js:58:17)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10),[39m
+[31m  level: 'error',[39m
+[31m  message: 'uncaughtException: otpController is not defined\n' +[39m
+[31m    'ReferenceError: otpController is not defined\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\otp.js:3:18)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:58:17)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)',[39m
+[31m  stack: 'ReferenceError: otpController is not defined\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\otp.js:3:18)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:58:17)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)',[39m
+[31m  exception: true,[39m
+[31m  date: 'Sun Jun 05 2022 18:51:48 GMT+0530 (India Standard Time)',[39m
+[31m  process: {[39m
+[31m    pid: 15336,[39m
+[31m    uid: null,[39m
+[31m    gid: null,[39m
+[31m    cwd: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server',[39m
+[31m    execPath: 'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m    version: 'v16.14.2',[39m
+[31m    argv: [[39m
+[31m      'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ],[39m
+[31m    memoryUsage: {[39m
+[31m      rss: 80908288,[39m
+[31m      heapTotal: 59625472,[39m
+[31m      heapUsed: 41540528,[39m
+[31m      external: 26060956,[39m
+[31m      arrayBuffers: 20017873[39m
+[31m    }[39m
+[31m  },[39m
+[31m  os: { loadavg: [ 0, 0, 0 ], uptime: 28488 },[39m
+[31m  trace: [[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\otp.js',[39m
+[31m      function: null,[39m
+[31m      line: 3,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 32,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.load',[39m
+[31m      line: 981,[39m
+[31m      method: 'load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 822,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'node:internal/modules/cjs/helpers',[39m
+[31m      function: 'require',[39m
+[31m      line: 102,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 17,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js',[39m
+[31m      function: null,[39m
+[31m      line: 58,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    }[39m
+[31m  ],[39m
+[31m  timestamp: '05 06 2022 06:51:48'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function createError[39m
+[31m      at new NodeError (node:internal/errors:371:5)[39m
+[31m      at Function.from (node:buffer:323:9)[39m
+[31m      at ServerResponse.send (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\response.js:189:22)[39m
+[31m      at forgotPassword (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\forgotPassword.js:36:16) {[39m
+[31m    code: 'ERR_INVALID_ARG_TYPE'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function createError[39m
+[31m        at new NodeError (node:internal/errors:371:5)[39m
+[31m        at Function.from (node:buffer:323:9)[39m
+[31m        at ServerResponse.send (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\response.js:189:22)[39m
+[31m        at forgotPassword (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\forgotPassword.js:36:16) {[39m
+[31m      code: 'ERR_INVALID_ARG_TYPE'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '05 06 2022 07:22:20'[39m
+[31m}[39m
+[31m{[39m
+[31m  reason: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function createError[39m
+[31m      at new NodeError (node:internal/errors:371:5)[39m
+[31m      at Function.from (node:buffer:323:9)[39m
+[31m      at ServerResponse.send (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\response.js:189:22)[39m
+[31m      at forgotPassword (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\forgotPassword.js:36:16) {[39m
+[31m    code: 'ERR_INVALID_ARG_TYPE'[39m
+[31m  },[39m
+[31m  message: 'Unhadnled Rejection at Promise',[39m
+[31m  promise: Promise {[39m
+[31m    <rejected> TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function createError[39m
+[31m        at new NodeError (node:internal/errors:371:5)[39m
+[31m        at Function.from (node:buffer:323:9)[39m
+[31m        at ServerResponse.send (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\node_modules\express\lib\response.js:189:22)[39m
+[31m        at forgotPassword (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\controller\auth\forgotPassword.js:36:16) {[39m
+[31m      code: 'ERR_INVALID_ARG_TYPE'[39m
+[31m    }[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '05 06 2022 07:22:33'[39m
+[31m}[39m
+[31m{[39m
+[31m  error: Error: Cannot find module './routes/auth/generatePassword'[39m
+[31m  Require stack:[39m
+[31m  - C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\app.js[39m
+[31m  - C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\bin\www[39m
+[31m      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:778:27)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19)[39m
+[31m      at require (node:internal/modules/cjs/helpers:102:18)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\app.js:59:30)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
+[31m      at Module.load (node:internal/modules/cjs/loader:981:32)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19) {[39m
+[31m    code: 'MODULE_NOT_FOUND',[39m
+[31m    requireStack: [[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ][39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  message: "uncaughtException: Cannot find module './routes/auth/generatePassword'\n" +[39m
+[31m    'Require stack:\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www\n' +[39m
+[31m    "Error: Cannot find module './routes/auth/generatePassword'\n" +[39m
+[31m    'Require stack:\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www\n' +[39m
+[31m    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:59:30)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',[39m
+[31m  stack: "Error: Cannot find module './routes/auth/generatePassword'\n" +[39m
+[31m    'Require stack:\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js\n' +[39m
+[31m    '- C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www\n' +[39m
+[31m    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:59:30)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',[39m
+[31m  exception: true,[39m
+[31m  date: 'Wed Jun 08 2022 18:36:28 GMT+0530 (India Standard Time)',[39m
+[31m  process: {[39m
+[31m    pid: 15332,[39m
+[31m    uid: null,[39m
+[31m    gid: null,[39m
+[31m    cwd: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server',[39m
+[31m    execPath: 'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m    version: 'v16.14.2',[39m
+[31m    argv: [[39m
+[31m      'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ],[39m
+[31m    memoryUsage: {[39m
+[31m      rss: 82898944,[39m
+[31m      heapTotal: 59625472,[39m
+[31m      heapUsed: 41444992,[39m
+[31m      external: 26060956,[39m
+[31m      arrayBuffers: 20017873[39m
+[31m    }[39m
+[31m  },[39m
+[31m  os: { loadavg: [ 0, 0, 0 ], uptime: 102217 },[39m
+[31m  trace: [[39m
+[31m    {[39m
+[31m      column: 15,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._resolveFilename',[39m
+[31m      line: 933,[39m
+[31m      method: '_resolveFilename',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 27,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 778,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'node:internal/modules/cjs/helpers',[39m
+[31m      function: 'require',[39m
+[31m      line: 102,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 30,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js',[39m
+[31m      function: null,[39m
+[31m      line: 59,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 32,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.load',[39m
+[31m      line: 981,[39m
+[31m      method: 'load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 822,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    }[39m
+[31m  ],[39m
+[31m  timestamp: '08 06 2022 06:36:28'[39m
+[31m}[39m
+[31m{[39m
+[31m  error: ReferenceError: generatePassword is not defined[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\routes\auth\generatePassword.js:5:18)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
+[31m      at Module.load (node:internal/modules/cjs/loader:981:32)[39m
+[31m      at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
+[31m      at Module.require (node:internal/modules/cjs/loader:1005:19)[39m
+[31m      at require (node:internal/modules/cjs/helpers:102:18)[39m
+[31m      at Object.<anonymous> (C:\Users\ASUS\Desktop\My Projects\URL Shortner\url-shortner-server\app.js:59:30)[39m
+[31m      at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
+[31m      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10),[39m
+[31m  level: 'error',[39m
+[31m  message: 'uncaughtException: generatePassword is not defined\n' +[39m
+[31m    'ReferenceError: generatePassword is not defined\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\generatePassword.js:5:18)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:59:30)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)',[39m
+[31m  stack: 'ReferenceError: generatePassword is not defined\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\generatePassword.js:5:18)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n' +[39m
+[31m    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +[39m
+[31m    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +[39m
+[31m    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +[39m
+[31m    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +[39m
+[31m    '    at Object.<anonymous> (C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js:59:30)\n' +[39m
+[31m    '    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n' +[39m
+[31m    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)',[39m
+[31m  exception: true,[39m
+[31m  date: 'Wed Jun 08 2022 19:39:33 GMT+0530 (India Standard Time)',[39m
+[31m  process: {[39m
+[31m    pid: 10348,[39m
+[31m    uid: null,[39m
+[31m    gid: null,[39m
+[31m    cwd: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server',[39m
+[31m    execPath: 'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m    version: 'v16.14.2',[39m
+[31m    argv: [[39m
+[31m      'C:\\Program Files\\nodejs\\node.exe',[39m
+[31m      'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\bin\\www'[39m
+[31m    ],[39m
+[31m    memoryUsage: {[39m
+[31m      rss: 82931712,[39m
+[31m      heapTotal: 59625472,[39m
+[31m      heapUsed: 41492840,[39m
+[31m      external: 26060956,[39m
+[31m      arrayBuffers: 20017873[39m
+[31m    }[39m
+[31m  },[39m
+[31m  os: { loadavg: [ 0, 0, 0 ], uptime: 106002 },[39m
+[31m  trace: [[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\routes\\auth\\generatePassword.js',[39m
+[31m      function: null,[39m
+[31m      line: 5,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 32,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.load',[39m
+[31m      line: 981,[39m
+[31m      method: 'load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 12,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._load',[39m
+[31m      line: 822,[39m
+[31m      method: '_load',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 19,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module.require',[39m
+[31m      line: 1005,[39m
+[31m      method: 'require',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 18,[39m
+[31m      file: 'node:internal/modules/cjs/helpers',[39m
+[31m      function: 'require',[39m
+[31m      line: 102,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 30,[39m
+[31m      file: 'C:\\Users\\ASUS\\Desktop\\My Projects\\URL Shortner\\url-shortner-server\\app.js',[39m
+[31m      function: null,[39m
+[31m      line: 59,[39m
+[31m      method: null,[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 14,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._compile',[39m
+[31m      line: 1103,[39m
+[31m      method: '_compile',[39m
+[31m      native: false[39m
+[31m    },[39m
+[31m    {[39m
+[31m      column: 10,[39m
+[31m      file: 'node:internal/modules/cjs/loader',[39m
+[31m      function: 'Module._extensions..js',[39m
+[31m      line: 1157,[39m
+[31m      method: '.js',[39m
+[31m      native: false[39m
+[31m    }[39m
+[31m  ],[39m
+[31m  timestamp: '08 06 2022 07:39:33'[39m
+[31m}[39m
