@@ -1,15 +1,13 @@
-const { model } = require("mongoose");
 const bcrypt = require("bcrypt");
-const createError = require("http-errors");
-const jwt = require("jsonwebtoken");
-
 const User = require("../../models/userModel");
-const config = require("../../config/index");
 const getURL = require("../getURL");
+const { genRefreshToken, genAccessToken } = require("../../utils/token");
 
 const login = async (req, res, next) => {
   const email = req.body.email;
   const password = req.body.password;
+  const urls = req.body.urls;
+  console.log("URLS: ", urls);
 
   try {
     const user = await User.findOne({ email: email });
@@ -17,28 +15,22 @@ const login = async (req, res, next) => {
     if (!user) {
       return res.status(401).send("Invalid credential Please register");
     }
+
     // Check whether password match or not with hashed one in DB
     const auth = await bcrypt.compare(password, user.password);
     if (auth) {
       // Create jwt access token
-      const accessToken = jwt.sign(
-        { email: user.email },
-        config.jwt.accessToken,
-        { expiresIn: "30s" }
-      );
-      // Refresh token
-      const refreshToken = jwt.sign(
-        { email: user.email },
-        config.jwt.refreshToken,
-        { expiresIn: "24m" }
-      );
-
+      const accessToken = genAccessToken(user.email);
+      const refreshToken = genRefreshToken(user.email);
+      const newURLs = [...new Set([...user.urls, ...urls])];
+      user.urls = newURLs;
+      user.save();
       // Set cookie with refreshToken
       res.cookie("token", refreshToken, {
         maxAge: 1000 * 60 * 24,
         httpOnly: false,
       });
-      const allUrl = await getURL(user.urls, user.email);
+      const allUrl = await getURL(newURLs, user.email);
 
       return res.status(200).json({
         message: `Welcome back ${user.email}`,

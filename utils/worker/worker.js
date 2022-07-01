@@ -19,12 +19,23 @@ if (isMainThread) {
 } else {
   const connetion = require("../../DB/mongoDB")();
   const ShortUrl = require("../../models/urlModel");
+  const Token = require("../../models/expireToken");
+
   (async function () {
-    data = await ShortUrl.deleteMany({
-      lastClicked: { $lt: Date.now() - 1000 * 60 * 10 },
+    let CurrentDate = Date.now();
+
+    urlDeletionCount = await ShortUrl.deleteMany({
+      lastClicked: { $lt: CurrentDate - 1000 * 60 * 10 },
     }); //change
-    // console.log(data);
-    parentPort.postMessage(data);
+    tokenDeletionCount = await Token.deleteMany({
+      date: { $lt: CurrentDate / 1000 }, //Jwt time is in seconds
+    });
+
+    parentPort.postMessage({
+      CurrentDate,
+      urlDeletionCount,
+      tokenDeletionCount,
+    });
     connetion.close(); //if Not close worker will also not exit
   })();
 }

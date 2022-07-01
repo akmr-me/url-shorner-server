@@ -19,19 +19,33 @@ const ipRestrict = require("./utils/middleware/ipRestrict");
 const app = express();
 
 // Connnect MONGODB
-mongoDB();
+const DBConnection = mongoDB();
 
+let server;
+app.use((req, res, next) => {
+  if (!server) {
+    server = req.connection.server;
+  }
+  next();
+});
 /**
  * When running Express app behind a proxy we need to detect client IP address correctly.
  * For NGINX the following must be configured 'proxy_set_header X-Forwarded-For $remote_addr;'
  * @link http://expressjs.com/en/guide/behind-proxies.html
  */
+
 app.set("trust proxy", true);
+// app.set('trust proxy', numberOfProxies)
+// we need to set noOfProxies beause heroku use load balance or reverse proxy and we will get that ip
+// to check no of proxy heroku has increase no if our ip match with response.send ip that is the no
+// app.set("trust proxy", 1);
+// app.get("/ip", (request, response) => response.send(request.ip));
 
 // Headers
 const cors = require("cors");
 const corsOptionsDelegate = require("./config/corsOptions");
 const authenticateUser = require("./controller/authenticatUser");
+const { urlGeneratorLimiter } = require("./controller/rateLimiter/rateLimiter");
 app.use(cors(corsOptionsDelegate));
 // cors({credentials})
 app.use(helmet());
@@ -57,13 +71,15 @@ app.use("/refresh", require("./routes/auth/refresh"));
 app.use("/forgotPassword", require("./routes/auth/forgotPassword"));
 app.use("/otp", require("./routes/auth/otp"));
 app.use("/generatePassword", require("./routes/auth/generatePassword"));
+app.use("/logout", require("./routes/logout"));
 // Error was due to delete from url model but can get that short form user model
 app.use("/", require("./routes/deleteUrl"));
 
 //Routes
 // app.use("/test", require("./routes/test"));
 app.use("/", redirectShortUrl);
-app.use("/", ipRestrict, authenticateUser, genrateUrl);
+// app.use("/", ipRestrict, authenticateUser, genrateUrl); //real one
+app.use("/", urlGeneratorLimiter, authenticateUser, genrateUrl);
 
 // Catch 404 and forward to error handler TODO put this in middleWare
 app.use(function (req, res, next) {
@@ -88,17 +104,16 @@ process.on("unhandledRejection", (reason, promise) => {
   // sendMail({ message: reason });
   winston.error({ reason, message: "Unhadnled Rejection at Promise", promise });
 });
-
 //Invoking worker thread for regular deletion of unused URLs later get time from environment variable
 setTimeout(() => {
   console.log("timer start");
   const databaseUpdate = require("./utils/worker/worker");
   databaseUpdate()
     .then((data) => {
-      sendMail({ message: `Deleted record ${data.deletedCount}` });
-      console.log(` Deleted record ${data.deletedCount}`);
+      const StringData = JSON.stringify(data);
+      sendMail({ message: `Deleted record ${StringData}` });
     })
-    .catch((e) => console.log(e.message));
+    .catch((e) => winston.error(e.stack));
 }, config.app.deletion_period);
 
 //In case of uncaucht exception
@@ -106,9 +121,27 @@ process.on("uncaughtException", (err) => {
   winston.error(err);
   process.exit(1);
 });
-
+// Gracefull Shutdown
 process.on("SIGINT", (signal) => {
-  winston.warn("Termianted by programmer using ::>  " + signal);
+  // winston.warn("Termianted by programmer using ::>  " + signal);
+  server.close(() => {
+    winston.warn("server closed..", signal);
+    DBConnection.close(false, () => {
+      winston.warn("DB disconnected");
+      process.exit(0);
+    });
+  });
+});
+
+process.on("SIGTERM", (signal) => {
+  // winston.warn("Termianted by programmer using ::>  " + signal);
+  server.close(() => {
+    winston.warn("server closed..", signal);
+    DBConnection.close(false, () => {
+      winston.warn("DB disconnected");
+      process.exit(0);
+    });
+  });
 });
 
 module.exports = app;

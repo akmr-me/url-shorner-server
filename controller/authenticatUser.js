@@ -1,25 +1,20 @@
 const jwt = require("jsonwebtoken");
 const config = require("../config/index");
 
-const authenticateUser = (req, res, next) => {
+const authenticateUser = async (req, res, next) => {
   const authHeader = req.headers["authorization"];
-  const token = authHeader && authHeader.split(" ")[1];
+  const userToken = authHeader && authHeader.split(" ")[1];
 
   console.log("authentcation");
 
-  if (token == null) {
+  if (userToken == null) {
     // Remember me Case
-    // if (req.headers["cookie"]) {
-    //   const token = req.headers['cookie'].split("=")[1]
-    //   jwt.verify(token, config.jwt.refreshToken, (err, email))
-    //   console.log("Has cookie", req.headers["cookie"]);
-    // }
     console.log("no token");
     next();
     return;
   }
 
-  jwt.verify(token, config.jwt.accessToken, (err, email) => {
+  jwt.verify(userToken, config.jwt.accessToken, (err, email) => {
     if (err) {
       console.log(err.message);
       //TODO:  this message is for Development only the error part

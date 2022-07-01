@@ -4,7 +4,7 @@ const router = express.Router();
 const debug = require("../config/debug");
 const urlCache = require("../DB/nodeCache");
 const ShortURL = require("../models/urlModel");
-const is_url = require("../utils/is_url");
+const { is_url, checkDns } = require("../utils/is_url");
 const logger = require("../utils/logger/logger");
 const User = require("../models/userModel");
 
@@ -13,7 +13,8 @@ router.post("/", async (req, res, next) => {
   //check url validity
   if (!is_url(fullURL))
     return next(createError(400, "Given URL is not a valid URL"));
-
+  let dnsStatus = await checkDns(fullURL);
+  if (!dnsStatus) return next(createError(400, "Invalid DNS of givent URL"));
   // Use try catch to check for common value for short url it will throw a error
   try {
     const result = await ShortURL.create({

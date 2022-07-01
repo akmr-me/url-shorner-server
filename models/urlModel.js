@@ -33,7 +33,7 @@ urlSchema.pre("save", function (next) {
   //we can check for http:// is appended or not in redirectShortUrl router(this will save few bytes in DB) or we can use schema.post also
   if (this.clicks === 0) {
     if (!this.fullUrl.includes("http")) {
-      this.fullUrl = `http://${this.fullUrl}`;
+      this.fullUrl = `https://${this.fullUrl}`;
     }
   }
   next();
