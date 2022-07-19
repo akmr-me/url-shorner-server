@@ -3,14 +3,9 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const helmet = require("helmet");
 const mongoDB = require("./DB/mongoDB");
-
-// We dont have to call it as function in line 16 it is already being called
-// Above line is wrong it just calls module console.log by just importing but not call function mongoDB
-
 const debug = require("./config/debug");
 const config = require("./config/index");
 const winston = require("./utils/logger/logger");
-
 const genrateUrl = require("./routes/genrateUrl");
 const redirectShortUrl = require("./routes/redirectShortUrl");
 const sendMail = require("./utils/mailjet/mailjet");
@@ -21,13 +16,6 @@ const app = express();
 // Connnect MONGODB
 const DBConnection = mongoDB();
 
-let server;
-app.use((req, res, next) => {
-  if (!server) {
-    server = req.connection.server;
-  }
-  next();
-});
 /**
  * When running Express app behind a proxy we need to detect client IP address correctly.
  * For NGINX the following must be configured 'proxy_set_header X-Forwarded-For $remote_addr;'
@@ -58,7 +46,6 @@ if (config.node.env === "development") {
   const { stderrStream, stdoutStream } = require("./utils/logger/morgan");
   app.use(stdoutStream, stderrStream);
 }
-
 //Other important middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -92,10 +79,10 @@ app.use(function (err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = config.node.env === "development" ? err : {};
   debug("Ip Address", req.ip);
-  winston.debug(err.message);
+  winston.debug("this.." + err.message);
   // render the error page
   res.status(err.status || 500);
-  res.json(err);
+  res.send(JSON.stringify(err.message));
 });
 // The 'unhandledRejection' event is emitted when Promise is rejected at there is no error handler attached to it
 // it just gives warning and does't exit the process
@@ -106,7 +93,6 @@ process.on("unhandledRejection", (reason, promise) => {
 });
 //Invoking worker thread for regular deletion of unused URLs later get time from environment variable
 setTimeout(() => {
-  console.log("timer start");
   const databaseUpdate = require("./utils/worker/worker");
   databaseUpdate()
     .then((data) => {
@@ -123,22 +109,22 @@ process.on("uncaughtException", (err) => {
 });
 // Gracefull Shutdown
 process.on("SIGINT", (signal) => {
-  // winston.warn("Termianted by programmer using ::>  " + signal);
-  server.close(() => {
-    winston.warn("server closed..", signal);
+  console.warn("Sigint-> ", signal);
+  app.get("SERVER").close(() => {
+    console.warn("server closed");
     DBConnection.close(false, () => {
-      winston.warn("DB disconnected");
+      console.warn("dbdisconnected");
       process.exit(0);
     });
   });
 });
 
 process.on("SIGTERM", (signal) => {
-  // winston.warn("Termianted by programmer using ::>  " + signal);
-  server.close(() => {
-    winston.warn("server closed..", signal);
+  console.warn("SIGRERM-> ", signal);
+  app.get("SERVER").close(() => {
+    console.warn("server closed..", signal);
     DBConnection.close(false, () => {
-      winston.warn("DB disconnected");
+      console.warn("DB disconnected");
       process.exit(0);
     });
   });

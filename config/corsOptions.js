@@ -1,4 +1,4 @@
-const whitelist = ["http://localhost:3000", "http://127.0.0.1:8080"];
+const whitelist = ["http://localhost:4002", "http://127.0.0.1:8080"];
 
 const corsOptionsDelegate = function (req, callback) {
   let corsOptions;

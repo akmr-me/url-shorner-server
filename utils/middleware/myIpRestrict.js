@@ -1,5 +1,3 @@
-const createError = require("http-errors");
-
 const ipRestrictClosure = () => {
   const ip = {};
   function ipRestrict(req, res, next) {
@@ -11,7 +9,7 @@ const ipRestrictClosure = () => {
       ip[req.ip]++;
       console.table(ip);
       if (ip[req.ip] > 5) {
-        return next(createError(403, "Max Limit of URL shortning Exceeded"));
+        return res.status(429).send("Max Limit of URL shortning Exceeded");
       }
       next();
     }
@@ -19,4 +17,4 @@ const ipRestrictClosure = () => {
   return ipRestrict;
 };
 
-module.exports = ipRestrictClosure();
+// module.exports = ipRestrictClosure();

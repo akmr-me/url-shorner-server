@@ -5,20 +5,19 @@ const authenticateUser = async (req, res, next) => {
   const authHeader = req.headers["authorization"];
   const userToken = authHeader && authHeader.split(" ")[1];
 
-  console.log("authentcation");
-
   if (userToken == null) {
-    // Remember me Case
-    console.log("no token");
     next();
     return;
   }
 
   jwt.verify(userToken, config.jwt.accessToken, (err, email) => {
     if (err) {
-      console.log(err.message);
+      console.error("JWT", err.message);
       //TODO:  this message is for Development only the error part
-      res.status(403).json({ error: "token expired" });
+      if (req.headers["cookie"])
+        return res.status(403).send("Please Try Again");
+
+      res.status(440).send("Session Expired. Please, Login Again");
       return;
     }
     console.log("Authenticated user");

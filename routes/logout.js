@@ -12,7 +12,6 @@ router.get("/", async (req, res) => {
 
     jwt.verify(userToken, config.jwt.refreshToken, async (err, data) => {
       if (err) {
-        console.error(err);
         res.cookie("token", null, {
           maxAge: 0,
         });
@@ -24,7 +23,6 @@ router.get("/", async (req, res) => {
           token: userToken,
           date: data.exp, //jwt in second
         });
-        console.log(token, "and", data.exp);
       } catch (error) {
         winston.error(error.stack);
       }

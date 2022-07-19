@@ -1,5 +1,6 @@
 const dns = require("dns");
 const util = require("util");
+const winston = require("./logger/logger");
 const lookup = util.promisify(dns.lookup);
 function is_url(str) {
   const regexp =
@@ -19,19 +20,16 @@ async function checkDns(strURL) {
   } else {
     str = "https://" + strURL;
   }
-  console.log("Str:", str);
   const host = new URL(str).host;
-  console.log("host:", host);
   const options = {
     family: 4,
     hints: dns.ADDRCONFIG | dns.V4MAPPED,
   };
   try {
     const { address } = await lookup(host, options);
-    console.log("address:", address);
     if (address) return true;
   } catch (error) {
-    console.log(error.stack);
+    winston.error(error.stack);
     return false;
   }
   return false;

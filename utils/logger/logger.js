@@ -52,7 +52,6 @@ if (env !== "production") {
 logger.stream = {
   stdout: {
     write(message, encoding) {
-      console.log("trying to write");
       //will log in console and file
       logger.info(message);
     },

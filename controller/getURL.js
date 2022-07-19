@@ -21,7 +21,6 @@ const getURL = async (urls, email) => {
         lastClicked: url.lastClicked,
       };
     }
-    // console.log(url);
   });
   const urlArr = await Promise.all(PromisedURLs);
 

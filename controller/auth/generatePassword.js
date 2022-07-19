@@ -8,12 +8,8 @@ const generatePassword = async (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
 
-  console.log(otp, email, password);
-  console.log(otpCache.keys());
-
   const tempOtp = await otpCache.get(email.toLowerCase());
   if (tempOtp == otp) {
-    console.log("tempOtp", tempOtp);
     const HashPassword = await bcrypt.hash(password, 10);
     const user = await User.findOneAndUpdate(
       { email: email },
@@ -27,7 +23,8 @@ const generatePassword = async (req, res) => {
 
       res.cookie("token", refreshToken, {
         maxAge: 1000 * 60 * 24,
-        httpOnly: false,
+        httpOnly: true,
+        secure: true,
       });
 
       return res.status(201).json({
@@ -36,9 +33,8 @@ const generatePassword = async (req, res) => {
         email: user.email,
       });
     }
-    console.log("updaated Password", user);
   } else {
-    return res.status(401).json({ message: "Some error occured/ Wrong OTP" });
+    return res.status(401).send("Some error occured/ Wrong OTP");
   }
 };
 module.exports = generatePassword;

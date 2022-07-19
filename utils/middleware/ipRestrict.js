@@ -1,4 +1,3 @@
-const createError = require("http-errors");
 const restrictCache = require("../../DB/restrictCache");
 const logger = require("../logger/logger");
 
@@ -17,12 +16,11 @@ const ipRestrict = async (req, res, next) => {
         const ttl = restrictCache.getTtl(req.ip);
         const now = Date.now();
         const waitTime = ((ttl - now) / (1000 * 60)) | 0;
-        return next(
-          createError(
-            403,
+        return res
+          .status(429)
+          .send(
             `Max Limit is 5 URLs for free acount wait until ::> ${waitTime}`
-          )
-        );
+          );
       }
       restrictCache.set(req.ip, count);
       next();
