@@ -36,7 +36,7 @@ const sendMail = (data) => {
     })
     .catch((e) => {
       //must handle this else this will give unhandledPromise and in unhandled promise if we invoke mailjet then mailjet then this will make a loop
-      winston.error(e.response.text);
+      winston.error(e.response);
     });
 };
 

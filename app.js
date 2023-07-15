@@ -66,8 +66,8 @@ app.use("/", require("./routes/deleteUrl"));
 // app.use("/test", require("./routes/test"));
 app.use("/", redirectShortUrl);
 // app.use("/", ipRestrict, authenticateUser, genrateUrl); //real one
-app.use("/", urlGeneratorLimiter, authenticateUser, genrateUrl);
-
+app.use("/generateUrl", urlGeneratorLimiter, authenticateUser, genrateUrl);
+app.use(`/${config.admin.path}`, require("./routes/admin"));
 // Catch 404 and forward to error handler TODO put this in middleWare
 app.use(function (req, res, next) {
   next(createError(404));

@@ -25,7 +25,10 @@ module.exports = {
       checkperiod: process.env.RESTRICT_CACHE_CHECKPERIOD,
     },
   },
-
+  admin: {
+    path: process.env.ADMIN_PATH,
+    pass: process.env.ADMIN_PASSWORD,
+  },
   mailjet: {
     keys: {
       api: process.env.MAILJET_API_KEY,

@@ -84,7 +84,7 @@ const html = (otp) => {
               text-decoration: none;
               font-weight: 600;
             "
-            >Amresh Kumar's URL Shortner</a
+            >URL Shortner</a
           >
         </div>
         <p style="font-size: 1.1em">Hi,</p>
