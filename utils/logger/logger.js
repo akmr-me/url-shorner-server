@@ -4,7 +4,6 @@ const { createLogger, transports, format } = require("winston");
 const { combine, prettyPrint } = format;
 const config = require("../../config/index");
 const env = config.node.env;
-console.log("env:", env);
 const root = require("app-root-path");
 //Custon setting for transport (File, Console)
 const options = {

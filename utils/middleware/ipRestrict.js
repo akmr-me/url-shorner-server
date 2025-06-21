@@ -7,11 +7,8 @@ const ipRestrict = async (req, res, next) => {
       restrictCache.set(req.ip, 0);
       next();
     } else {
-      console.log(restrictCache.get(req.ip));
       let count = await restrictCache.get(req.ip);
       count++;
-      console.log(restrictCache.keys());
-      console.log(count + "count");
       if (count > 5000) {
         const ttl = restrictCache.getTtl(req.ip);
         const now = Date.now();

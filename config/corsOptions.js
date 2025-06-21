@@ -1,20 +1,89 @@
-const whitelist = [
-  "http://localhost:4002",
-  "http://127.0.0.1:8080",
-  "https://www.akmr.me",
-];
+const config = require("./index");
+const logger = require("../utils/logger/logger");
 
-const corsOptionsDelegate = function (req, callback) {
-  let corsOptions;
-  if (whitelist.indexOf(req.header("Origin")) !== -1) {
-    // Axios option withCredentils to be set true if wants to save cookie in cookie storage
-    // And with withCredentials set and Without Acess-Control-Allow-Credentials to true :Cors issue cors issue
-    corsOptions = { origin: true, credentials: true };
-  } else {
-    corsOptions = { origin: false, credentials: false };
+/**
+ * Allowed origins based on environment
+ * In production, specify exact domains
+ * In development, allow localhost ports
+ */
+const allowedOrigins = {
+  development: [
+    "http://localhost:3000",
+    "http://localhost:4002",
+    "http://127.0.0.1:8080",
+    "http://localhost:8002",
+  ],
+  production: [
+    "https://www.akmr.me",
+    // Add other production domains here
+  ],
+};
+
+/**
+ * Default CORS options
+ */
+const defaultOptions = {
+  // Only allow specific HTTP methods
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+
+  // Allow specific headers
+  allowedHeaders: [
+    "Content-Type",
+    "Authorization",
+    "X-Requested-With",
+    "Accept",
+    "Origin",
+  ],
+
+  // Cache preflight requests for 1 hour
+  maxAge: 3600,
+
+  // Enforce strict SSL in production
+  secure: process.env.NODE_ENV === "production",
+};
+
+/**
+ * CORS configuration delegate
+ * @param {Object} req - Express request object
+ * @param {Function} callback - CORS callback function
+ */
+const corsOptionsDelegate = (req, callback) => {
+  const origin = req.header("Origin");
+  const env = process.env.NODE_ENV || "development";
+
+  try {
+    // Check if origin is allowed
+    const isAllowed = allowedOrigins[env]?.includes(origin);
+
+    if (isAllowed) {
+      logger.debug("CORS allowed for origin:", { origin });
+
+      callback(null, {
+        ...defaultOptions,
+        origin: true,
+        credentials: true,
+      });
+    } else {
+      logger.warn("CORS blocked for origin:", {
+        origin,
+        ip: req.ip,
+      });
+
+      callback(null, {
+        ...defaultOptions,
+        origin: false,
+        credentials: false,
+      });
+    }
+  } catch (error) {
+    logger.error("CORS error:", {
+      error: error.message,
+      origin,
+      ip: req.ip,
+    });
+
+    callback(error);
   }
-  //optionsSuccessStatus: 200,
-  callback(null, corsOptions);
 };
 
 module.exports = corsOptionsDelegate;

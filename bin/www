@@ -4,85 +4,105 @@
  * Module dependencies.
  */
 
-var app = require("../app");
-var debug = require("debug")("url-shortner-server:server");
-var http = require("http");
-var winston = require("../utils/logger/logger");
+const app = require("../app");
+const { server: debug } = require("../config/debug");
+const http = require("http");
+const winston = require("../utils/logger/logger");
 
 /**
- * Get port from environment and store in Express.
+ * Normalize a port into a number
+ * @param {string|number} val - Port value to normalize
+ * @returns {number} Normalized port number
+ * @throws {Error} If port is invalid
  */
-
-var port = normalizePort(process.env.PORT || "4000");
-app.set("port", port);
-
-/**
- * Create HTTP server.
- */
-
-var server = http.createServer(app);
-app.set("SERVER", server);
-/**
- * Listen on provided port, on all network interfaces.
- */
-
-server.listen(port);
-server.on("error", onError);
-server.on("listening", onListening);
-
-/**
- * Normalize a port into a number, string, or false.
- */
-
-function normalizePort(val) {
-  var port = parseInt(val, 10);
+const normalizePort = (val) => {
+  const port = parseInt(val, 10);
 
   if (isNaN(port)) {
-    // named pipe
-    return val;
+    throw new Error(`Invalid port: ${val}`);
   }
 
-  if (port >= 0) {
-    // port number
-    return port;
+  if (port < 0 || port > 65535) {
+    throw new Error(`Port number out of range: ${port}`);
   }
 
-  return false;
-}
+  return port;
+};
 
 /**
  * Event listener for HTTP server "error" event.
+ * @param {Error} error - Error object
  */
-
-function onError(error) {
+const onError = (error) => {
   if (error.syscall !== "listen") {
     throw error;
   }
 
-  var bind = typeof port === "string" ? "Pipe " + port : "Port " + port;
-
-  // handle specific listen errors with friendly messages
+  // Handle specific listen errors with friendly messages
   switch (error.code) {
     case "EACCES":
-      console.error(bind + " requires elevated privileges");
+      winston.error(`Port ${port} requires elevated privileges`);
       process.exit(1);
       break;
     case "EADDRINUSE":
-      console.error(bind + " is already in use");
+      winston.error(`Port ${port} is already in use`);
       process.exit(1);
       break;
     default:
       throw error;
   }
-}
+};
 
 /**
  * Event listener for HTTP server "listening" event.
  */
+const onListening = () => {
+  const addr = server.address();
+  winston.info("Server started", {
+    environment: process.env.NODE_ENV || "development",
+    port: addr.port,
+    pid: process.pid,
+    host: addr.address === "::" ? "0.0.0.0" : addr.address,
+  });
 
-function onListening() {
-  var addr = server.address();
-  var bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
-  debug("Listening on " + bind);
-  winston.debug("Listening on " + bind);
-}
+  debug(`Server listening on port ${addr.port}`);
+};
+
+// Get port from environment or use default
+const port = normalizePort(process.env.PORT || "4000");
+app.set("port", port);
+
+// Create HTTP server
+const server = http.createServer(app);
+app.set("SERVER", server);
+
+// Setup server event handlers
+server.on("error", onError);
+server.on("listening", onListening);
+
+// Handle graceful shutdown
+const gracefulShutdown = (signal) => {
+  winston.info(`${signal} received. Starting graceful shutdown...`);
+
+  server.close(() => {
+    winston.info("Server closed");
+    process.exit(0);
+  });
+
+  // Force close if graceful shutdown fails
+  setTimeout(() => {
+    winston.error(
+      "Could not close connections in time, forcefully shutting down"
+    );
+    process.exit(1);
+  }, 10000);
+};
+
+// Handle shutdown signals
+process.on("SIGTERM", () => gracefulShutdown("SIGTERM"));
+process.on("SIGINT", () => gracefulShutdown("SIGINT"));
+
+// Start server
+server.listen(port, () => {
+  winston.info(`Server starting on port ${port}`);
+});

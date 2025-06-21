@@ -1,3 +1,4 @@
+const config = require("../../config");
 const otpCache = require("../../DB/otpCache");
 const User = require("../../models/userModel");
 const winston = require("../../utils/logger/logger");
@@ -17,16 +18,31 @@ const forgotPassword = async (req, res) => {
     }
 
     const otp = OTP();
-    otpCache.set(user.email, otp);
-
-    await sendMail({
-      subject: "You OTP For URL Shortner",
-      message: `Your OTP is: ${otp}`,
-      otp: otp,
-      to: user.email,
+    const { success, ...OTPRest } = await otpCache.storeOTP(email, {
+      otp,
+      // password,
     });
 
-    return res.status(201).send({
+    if (!success) {
+      winston.error("Failed to store OTP in cache");
+      return res.status(400).send({
+        ...OTPRest,
+        message: OTPRest.message || "Failed to store OTP in cache",
+      });
+    }
+    if (config.node.env === "production") {
+      //   Send the OTP to the user via email
+      sendMail({
+        to: email,
+        subject: "Your OTP for Registration",
+        otp: otp,
+        message: `Your OTP for registration is ${otp}. It will expire in 5 minutes.`,
+      });
+    } else {
+      console.log(`OTP for ${email}: ${otp}`);
+    }
+
+    return res.status(200).send({
       message: `A 4 digit OTP has been sent to ${email}`,
     });
   } catch (error) {

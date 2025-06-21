@@ -17,7 +17,8 @@ if (isMainThread) {
     });
   };
 } else {
-  const connetion = require("../../DB/mongoDB")();
+  const { connectDB, closeConnection } = require("../../DB/mongoDB");
+  connectDB();
   const ShortUrl = require("../../models/urlModel");
   const Token = require("../../models/expireToken");
 
@@ -25,7 +26,7 @@ if (isMainThread) {
     let CurrentDate = Date.now();
 
     urlDeletionCount = await ShortUrl.deleteMany({
-      lastClicked: { $lt: CurrentDate - 1000 * 60 * 10 },
+      lastClicked: { $lt: CurrentDate - 1000 * 60 * 10 * 24 * 30 }, // 30 days
     }); //change
     tokenDeletionCount = await Token.deleteMany({
       date: { $lt: CurrentDate / 1000 }, //Jwt time is in seconds
@@ -36,6 +37,6 @@ if (isMainThread) {
       urlDeletionCount,
       tokenDeletionCount,
     });
-    connetion.close(); //if Not close worker will also not exit
+    closeConnection(); //if Not close worker will also not exit
   })();
 }

@@ -22,20 +22,21 @@ const sendMail = (data) => {
               Name: data.to ? data.to.split("@")[0] : "Developer",
             },
           ],
-          Subject: data.subject || "This is from Url Shortner",
+          Subject: data.subject || "This is from Linkify",
           TextPart: `${data.message}`,
           HTMLPart: data.otp
             ? html(data.otp)
             : `<div><h1>${data.subject}</h1><p>${data.message} </p></div>`,
-          CustomId: "This is custom ID from url-shortneer",
+          CustomId: "This is custom ID from linkify",
         },
       ],
     })
     .then((res) => {
-      winston.log(res.body.Messages[0].Status);
+      winston.info(res.body);
     })
     .catch((e) => {
       //must handle this else this will give unhandledPromise and in unhandled promise if we invoke mailjet then mailjet then this will make a loop
+      console.error("Error sending email:", e);
       winston.error(e.response);
     });
 };

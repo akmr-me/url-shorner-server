@@ -1,136 +1,167 @@
+const config = require("../../config");
+
 const html = (otp) => {
   return `<!DOCTYPE html>
-<html
-  lang="en"
-  xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:v="urn:schemas-microsoft-com:vml"
-  xmlns:o="urn:schemas-microsoft-com:office:office"
->
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!-- Forcing initial-scale shouldn't be necessary -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Use the latest (edge) version of IE rendering engine -->
-    <meta name="x-apple-disable-message-reformatting" />
-    <!-- Disable auto-scale in iOS 10 Mail entirely -->
-    <title>OTP from URL Shortner</title>
-    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>Your OTP from ${config.app.name}</title>
     <style>
-      /* Tooltip container */
-      .tooltip {
-        position: relative;
-        border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-        cursor: pointer;
-        background: #00466a;
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+      
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        -webkit-font-smoothing: antialiased;
+        background-color: #f9fafb;
+      }
+
+      .container {
+        max-width: 600px;
         margin: 0 auto;
-        width: max-content;
-        padding: 0 15px;
-        color: #fff;
-        border-radius: 4px;
+        padding: 20px;
       }
 
-      /* Tooltip text */
-      .tooltip .tooltiptext {
-        visibility: hidden;
-        font-size: 15px;
-        background-color: grey;
-        color: #fff;
+      .card {
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 32px;
+        margin: 24px 0;
+      }
+
+      .logo {
         text-align: center;
-        padding: 5px 0;
-        border-radius: 6px;
-        font-weight: 400;
-        width: 120px;
-        bottom: 110%;
-        left: 50%;
-        margin-left: -60px;
-        /* Position the tooltip text - see examples below! */
-        position: absolute;
-        z-index: 1;
+        margin-bottom: 24px;
       }
 
-      /* Show the tooltip text when you mouse over the tooltip container */
-      .tooltip:hover .tooltiptext {
-        visibility: visible;
+      .logo a {
+        color: #2563eb;
+        font-size: 24px;
+        font-weight: 700;
+        text-decoration: none;
       }
-      .tooltip .tooltiptext::after {
-        content: " ";
-        position: absolute;
-        top: 100%; /* At the bottom of the tooltip */
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: grey transparent transparent transparent;
+
+      .otp-container {
+        background: #f3f4f6;
+        border-radius: 6px;
+        padding: 16px;
+        text-align: center;
+        margin: 24px 0;
+        cursor: pointer;
+      }
+
+      .otp-code {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1f2937;
+        letter-spacing: 4px;
+        margin: 0;
+      }
+
+      .tooltip {
+        font-size: 14px;
+        color: #6b7280;
+        margin-top: 8px;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 32px;
+        padding-top: 16px;
+        border-top: 1px solid #e5e7eb;
+        color: #6b7280;
+        font-size: 14px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #1f2937;
+        }
+        .card {
+          background-color: #111827;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        }
+        .logo a {
+          color: #60a5fa;
+        }
+        .otp-container {
+          background-color: #374151;
+        }
+        .otp-code {
+          color: #f9fafb;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .container {
+          width: 100%;
+          padding: 12px;
+        }
+        .card {
+          padding: 24px;
+          margin: 16px 0;
+        }
       }
     </style>
   </head>
   <body>
-    <div
-      style="
-        font-family: Helvetica, Arial, sans-serif;
-        min-width: 1000px;
-        overflow: auto;
-        line-height: 2;
-      "
-    >
-      <div style="margin: 50px auto; width: 70%; padding: 20px 0">
-        <div style="border-bottom: 1px solid #eee">
-          <a
-            href=""
-            style="
-              font-size: 1.4em;
-              color: #00466a;
-              text-decoration: none;
-              font-weight: 600;
-            "
-            >URL Shortner</a
-          >
+    <div class="container">
+      <div class="card">
+        <div class="logo">
+          <a href="https://your-domain.com">${config.app.name}</a>
         </div>
-        <p style="font-size: 1.1em">Hi,</p>
-        <p>
-          Thank you for choosing URL Shortner. Use the following OTP to Reset
-          your password procedures. OTP is valid for 5 minutes. You can also
-          click on OTP to Copy.
-        </p>
-        <div class="tooltip">
-          <h2 id="copy-input" style="margin: 0 auto">${otp}</h2>
-          <span class="tooltiptext">Click to Copy</span>
+        
+        <h1 style="margin: 0 0 16px; font-size: 20px; color: #374151;">Password Reset Request</h1>
+        
+        <p>Hello,</p>
+        
+        <p>We received a request to reset your password. Use the following one-time password (OTP) to continue. This code will expire in 5 minutes.</p>
+        
+        <div class="otp-container" onclick="copyOTP()">
+          <div class="otp-code" id="otp-code">${otp}</div>
+          <div class="tooltip" id="tooltip">Click to copy</div>
         </div>
-        <p style="font-size: 0.9em">Regards,<br />admin@akmr.me</p>
-        <hr style="border: none; border-top: 1px solid #eee" />
-        <div
-          style="
-            float: right;
-            padding: 8px 0;
-            color: #aaa;
-            font-size: 0.8em;
-            line-height: 1;
-            font-weight: 300;
-          "
-        >
-          <p>URL Shortner</p>
-          <p>Amresh Kumar</p>
-          <p>JavaScript Developer</p>
+        
+        <p>If you didn't request this password reset, please ignore this email or contact support if you have concerns.</p>
+        
+        <div class="footer">
+          <p>${config.app.name}</p>
+          <p style="margin: 4px 0;">© ${new Date().getFullYear()} ${
+    config.app.name
+  }. All rights reserved.</p>
         </div>
       </div>
     </div>
+
     <script>
-      document.querySelector(".tooltip").onclick = function () {
-        // Select the content
-        const value = document.querySelector("#copy-input").innerHTML;
-        // Copy to the clipboard
-        navigator.clipboard.writeText(value);
-        if (value) {
-          document.querySelector(".tooltiptext").innerText = "Copied.";
+      function copyOTP() {
+        const otp = document.getElementById('otp-code').innerText;
+        const tooltip = document.getElementById('tooltip');
+        
+        navigator.clipboard.writeText(otp).then(() => {
+          tooltip.innerText = 'Copied!';
           setTimeout(() => {
-            document.querySelector(".tooltiptext").innerText = "Click to Copy";
-          }, 1000);
-        }
-      };
+            tooltip.innerText = 'Click to copy';
+          }, 2000);
+        }).catch(() => {
+          tooltip.innerText = 'Failed to copy';
+          setTimeout(() => {
+            tooltip.innerText = 'Click to copy';
+          }, 2000);
+        });
+      }
     </script>
   </body>
-</html>
-`;
+</html>`;
 };
+
 module.exports = html;

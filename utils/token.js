@@ -1,17 +1,16 @@
 const jwt = require("jsonwebtoken");
 const config = require("../config");
 
-const genAccessToken = (data) => {
-  let access = jwt.sign({ email: data }, config.jwt.accessToken, {
-    expiresIn: "5s",
+const genAccessToken = (email, sessionId) => {
+  return jwt.sign({ email, sessionId }, config.jwt.accessToken, {
+    expiresIn: config.jwt.accessTokenExpiry || "2m",
   });
-  return access;
 };
-const genRefreshToken = (data) => {
-  let refresh = jwt.sign({ email: data }, config.jwt.refreshToken, {
-    expiresIn: "30m",
+
+const genRefreshToken = (email, sessionId) => {
+  return jwt.sign({ email, sessionId }, config.jwt.refreshToken, {
+    expiresIn: config.jwt.refreshTokenExpiry || "24h",
   });
-  return refresh;
 };
 
 module.exports = {

@@ -3,27 +3,79 @@ const config = require("../../config");
 const ExpireToken = require("../../models/expireToken");
 const { genAccessToken } = require("../../utils/token");
 const User = require("../../models/userModel");
-const getURL = require("../getURL");
+const logger = require("../../utils/logger/logger");
 
-const refreshController = async (req, res, next) => {
-  if (!req.headers["cookie"]) return res.status(401).send("Please Login Again");
-  const refreshToken = req.headers["cookie"].split("=")[1];
+const refreshController = async (req, res) => {
+  try {
+    const refreshToken = req.cookies["token"];
+    if (!refreshToken) {
+      logger.debug("Refresh token missing");
+      return res.status(401).json({ error: "Please login again" });
+    }
 
-  const tokenStatus = await ExpireToken.findOne({ token: refreshToken });
+    // Check if token exists in database
+    const tokenDoc = await ExpireToken.findOne({ token: refreshToken });
 
-  if (refreshToken && !tokenStatus) {
-    jwt.verify(refreshToken, config.jwt.refreshToken, async (err, user) => {
-      if (err) {
-        // Wrong refresh tokenn
-        return res.status(406).send("Unauthorized");
-      }
-      const accessToken = genAccessToken(user.email);
-      const userData = await User.findOne({ email: user.email });
-      const urls = await getURL(userData.urls, userData.email);
-      return res.send({ accessToken, email: user.email, data: { urls: urls } });
+    // Token not found in database - possible replay attack or expired token
+    if (!tokenDoc || tokenDoc.isRevoked) {
+      logger.warn("Refresh token not found in database");
+      res.clearCookie("token");
+      res.clearCookie("accessToken");
+      return res.status(401).json({ error: "Invalid session" });
+    }
+
+    // Verify JWT token
+    const decoded = await new Promise((resolve, reject) => {
+      jwt.verify(refreshToken, config.jwt.refreshToken, (err, decoded) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(decoded);
+        }
+      });
     });
-  } else {
-    return res.status(406).send("Unauthorized");
+
+    // Find user
+    const user = await User.findOne({ email: decoded.email });
+    if (!user) {
+      logger.warn("User not found for refresh token", { email: decoded.email });
+      await ExpireToken.deleteOne({ token: refreshToken });
+      return res.status(401).json({ error: "Invalid session" });
+    }
+
+    // Generate new access token
+    const accessToken = genAccessToken(user.email, decoded.sessionId);
+
+    // Set new access token cookie
+    res.cookie("accessToken", accessToken, {
+      maxAge: 1000 * 60 * 2, // 2 minutes
+      httpOnly: true,
+      secure: true,
+      sameSite: "strict",
+    });
+
+    // Clear guest cookie if exists
+    // res.clearCookie("guestId");
+
+    logger.info("Access token refreshed", { email: user.email });
+
+    return res.json({
+      email: user.email,
+      name: user.name,
+      ...(user.googleAuth.picture && { picture: user.googleAuth.picture }),
+    });
+  } catch (error) {
+    logger.error("Token refresh failed:", error);
+
+    // Clear cookies on error
+    res.clearCookie("token");
+    res.clearCookie("accessToken");
+
+    if (error instanceof jwt.JsonWebTokenError) {
+      return res.status(401).json({ error: "Invalid session" });
+    }
+
+    return res.status(500).json({ error: "Token refresh failed" });
   }
 };
 
